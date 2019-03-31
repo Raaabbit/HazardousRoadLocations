@@ -1,0 +1,11 @@
+README.md
+setup.py
+pySTARMA/__init__.py
+pySTARMA/stacf_stpacf.py
+pySTARMA/starma_model.py
+pySTARMA/utils.py
+pySTARMA.egg-info/PKG-INFO
+pySTARMA.egg-info/SOURCES.txt
+pySTARMA.egg-info/dependency_links.txt
+pySTARMA.egg-info/requires.txt
+pySTARMA.egg-info/top_level.txt
