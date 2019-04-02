@@ -44,7 +44,7 @@ html,body{
     width: 0;
     height: 0;
 }
-#main-form label,#submit-btn{
+#main-form label,#submit-btn,#export-btn{
     display: inline-block;
     height: 30px;
     font: 14px/30px "sans-serif";
@@ -56,7 +56,7 @@ html,body{
     color:#1E88C7;
     cursor: pointer;
 }
-#main-form label:hover,#submit-btn:hover{
+#main-form label:hover,#submit-btn:hover,#export-btn:hover{
     border-color: #99D3F5;
 }
 #road-file-name,#time-file-name{
@@ -64,7 +64,7 @@ html,body{
     height: 30px;
     font: 14px/30px "sans-serif";
     padding: 4px 12px;
-    width: 160px;
+    width: 140px;
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
