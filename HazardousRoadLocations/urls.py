@@ -3,5 +3,6 @@ from django.urls import path
 from HRLapp import views
 urlpatterns = [
     path('index.html',views.index),
-    path('upload/',views.upload)
+    path('upload/',views.upload),
+    path('centerMsg/',views.centerMsg)
 ]
