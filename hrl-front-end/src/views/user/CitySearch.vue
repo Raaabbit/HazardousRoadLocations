@@ -79,7 +79,7 @@ export default {
             citySelected:"",
             countryList:["America"],
             cityList:["Alameda","Contra Costa","Fresno"],
-            mapData:[{"bp_num": 1.0, "bp_lon": -119.7814995, "bp_lat": 36.7515649, "bp_r": 277.9},{"bp_num": 2.0, "bp_lon": -119.80829, "bp_lat": 36.75038, "bp_r": 240.8}]
+            mapData:[]
         }
     },
     methods:{

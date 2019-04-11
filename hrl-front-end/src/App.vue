@@ -95,7 +95,7 @@ export default {
         password: "",
         passwordConfirm: ""
       },
-      islogin: true, // bool 是否登录
+      islogin: false, // bool 是否登录
       userRole: 1, // number 用户身份标记
       loginDialogVisible: false,
       signupDialogvisible: false
