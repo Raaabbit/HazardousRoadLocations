@@ -19,7 +19,7 @@
                     <div id="submit-btn" @click="updateAll">开始分析</div>
                     <div id="export-btn" @click="exportRes">导出结果</div>
                 </div>
-                <input type="file" name="roadFile" id="roadFile" accept=".csv">
+                <input type="file" name="roadFile" id="roadFile" accept=".csv" @change="updateRoad">
                 <input type="file" name="timeFile" id="timeFile" accept=".csv">
             </div>
             <!-- 地图 -->

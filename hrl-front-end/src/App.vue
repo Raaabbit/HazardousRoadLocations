@@ -19,7 +19,7 @@
           <router-link to="/report">
             <button>提出反馈</button>
           </router-link>
-          <button>退出登录</button>
+          <button @click="quit">退出登录</button>
         </div>
         <div class="manager-btns" v-else-if="userRole == 2">
           <router-link to="/dealreport">
@@ -31,7 +31,7 @@
           <router-link to="/addmanager">
             <button>添加新管理员</button>
           </router-link>
-          <button>退出登录</button>
+          <button @click="quit">退出登录</button>
         </div>
       </nav>
       <!-- 登录表单 -->
@@ -41,12 +41,12 @@
             <el-input v-model="loginForm.username" autocomplete="off"></el-input>
           </el-form-item>
           <el-form-item label="密码">
-            <el-input v-model="loginForm.password" autocomplete="off"></el-input>
+            <el-input show-password v-model="loginForm.password" autocomplete="off"></el-input>
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
           <el-button @click="loginDialogVisible = false">取 消</el-button>
-          <el-button type="primary" @click="loginDialogVisible = false">登 录</el-button>
+          <el-button type="primary" @click="login">登 录</el-button>
         </div>
       </el-dialog>
       <!-- 注册表单 -->
@@ -56,15 +56,15 @@
             <el-input v-model="signupForm.username" autocomplete="off"></el-input>
           </el-form-item>
           <el-form-item label="输入密码">
-            <el-input v-model="signupForm.password" autocomplete="off"></el-input>
+            <el-input show-password v-model="signupForm.password" autocomplete="off"></el-input>
           </el-form-item>
           <el-form-item label="确认密码">
-            <el-input v-model="signupForm.passwordConfirm" autocomplete="off"></el-input>
+            <el-input show-password v-model="signupForm.passwordConfirm" autocomplete="off"></el-input>
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
           <el-button @click="signupDialogvisible = false">取 消</el-button>
-          <el-button type="primary" @click="signupDialogvisible = false">注 册</el-button>
+          <el-button type="primary" @click="signup">注 册</el-button>
         </div>
       </el-dialog>
     </header>
@@ -100,6 +100,76 @@ export default {
       loginDialogVisible: false,
       signupDialogvisible: false
     };
+  },
+  created(){
+    let loginInfo = localStorage.getItem('hrl-login-info');
+    if (loginInfo) {
+      console.log("已登录");
+      let loginInfoObj = JSON.parse(loginInfo)
+      this.username = loginInfoObj.username
+      this.userRole = loginInfoObj.role
+      this.islogin = true
+    }
+  },
+  methods:{
+    login(){
+      this.$axios({
+        method:"post",
+        url:"/login/",
+        data:{
+          username:this.loginForm.username,
+          password:this.loginForm.password
+        }
+      }).then((res)=>{
+        let data = res.data
+        if (data.code == 1) {
+          this.islogin = true
+          this.userRole = data.role
+          this.username = data.username
+          this.loginDialogVisible = false
+          // 使用localStorage管理登录态
+          let temp = {"role":this.userRole,"username":this.username}
+          localStorage.setItem('hrl-login-info',JSON.stringify(temp))
+        }else if (data.code == 0) {
+          alert(data.info)
+          return ;
+        }
+      }).catch((err)=>{
+        console.log(err)
+        this.loginDialogVisible = false
+      })
+    },
+    signup(){
+      if (this.signupForm.password != this.signupForm.passwordConfirm) {
+        alert("两次输入密码不一致");
+        return ;
+      }
+      this.$axios({
+        method:"post",
+        url:"/signup/",
+        headers:{
+          contentType: "application/json",
+          dataType: "json",
+        },
+        data:{
+          username:this.signupForm.username,
+          password:this.signupForm.password
+        }
+      }).then((res)=>{
+        console.log(res.data)
+        this.signupDialogvisible = false
+      }).catch((err)=>{
+        console.log(err)
+        this.signupDialogvisible = false
+      })
+    },
+    quit(){
+      this.username = ''
+      this.islogin = false
+      this.userRole = 1
+      localStorage.removeItem('hrl-login-info')
+      this.$router.push({ path: '/' })
+    }
   }
 };
 </script>

@@ -13,7 +13,7 @@
                     <el-input v-model="cityName"></el-input>
                 </el-form-item>
                 <div>
-                    <label for="bpFile">选择道路信息文件</label>
+                    <label for="bpFile">选择路网黑点文件</label>
                     <input type="file" name="bpFile" id="bpFile" accept=".json">
                     <span id="bpFileName">尚未上传文件</span>
                 </div>

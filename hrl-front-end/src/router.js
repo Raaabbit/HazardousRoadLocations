@@ -33,12 +33,12 @@ export default new Router({
       component: () => import('./views/manager/Dealreport.vue')
     },
     {
-      path: '/index.html/addbps',
+      path: '/addbps',
       name: 'addbps',
       component: () => import('./views/manager/AddBps.vue')
     },
     {
-      path: '/index.html/addmanager',
+      path: '/addmanager',
       name: 'addmanager',
       component: () => import('./views/manager/AddManager.vue')
     }
