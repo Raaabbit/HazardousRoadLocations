@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b359b6ea-4455-487e-825e-5e453e77b6c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/user/CitySearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/user/CitySearch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/CSS/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/CSS/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/JS/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/JS/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/map-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/res.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/road.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/time.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,12 +162,12 @@
       <workItem from="1554850190468" duration="2402000" />
       <workItem from="1554870662752" duration="1526000" />
       <workItem from="1554903823309" duration="876000" />
-      <workItem from="1554968579475" duration="3482000" />
+      <workItem from="1554968579475" duration="4261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37770000" />
+    <option name="totallyTimeSpent" value="38549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
