@@ -3,48 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b359b6ea-4455-487e-825e-5e453e77b6c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRLapp/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRLapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HRLapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HRLapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HRLapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HazardousRoadLocations/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HazardousRoadLocations/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/app.38c82ab5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-0afcab6c.a065681b.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-4a2d3510.3bb0666e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-59f3e08a.ec5511e6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-67b5e30d.d8f14fb5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-ad4b04de.9d6068bd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-ea5d9e42.920a6132.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-vendors.6bd4598f.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/fonts/element-icons.2fad952a.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/fonts/element-icons.6f0a7632.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/img/home-img1.4494b598.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/img/home-img2.10820d4a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/img/logo.4de07d55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/img/map-banner.e0e412ef.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/img/tips.316b58d4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.bb3a3fb7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.bb3a3fb7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-0afcab6c.43ba32a7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-0afcab6c.43ba32a7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-4a2d3510.99e7908d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-4a2d3510.99e7908d.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-59f3e08a.a138b665.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-59f3e08a.a138b665.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-67b5e30d.32fde58e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-67b5e30d.32fde58e.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-ad4b04de.21c9bbd9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-ad4b04de.21c9bbd9.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-ea5d9e42.f7439b33.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-ea5d9e42.f7439b33.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-vendors.62c0362f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-vendors.62c0362f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-6550c032.d74827e8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.1a8998be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.1a8998be.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-6550c032.278e56b9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-6550c032.278e56b9.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hrl-front-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/manager/AddBps.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/manager/AddBps.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/user/FileAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/user/FileAnalysis.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HRLapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+            <state relative-caret-position="298">
+              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -161,22 +128,6 @@
             <path>
               <item name="HazardousRoadLocations" type="b2602c69:ProjectViewProjectNode" />
               <item name="HazardousRoadLocations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HazardousRoadLocations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HazardousRoadLocations" type="462c0819:PsiDirectoryNode" />
-              <item name="HazardousRoadLocations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HazardousRoadLocations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HazardousRoadLocations" type="462c0819:PsiDirectoryNode" />
-              <item name="HRLapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HazardousRoadLocations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HazardousRoadLocations" type="462c0819:PsiDirectoryNode" />
-              <item name="HRLapp" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,12 +210,12 @@
       <workItem from="1554870662752" duration="1526000" />
       <workItem from="1554903823309" duration="876000" />
       <workItem from="1554968579475" duration="7273000" />
-      <workItem from="1554989380026" duration="13767000" />
+      <workItem from="1554989380026" duration="18447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55328000" />
+    <option name="totallyTimeSpent" value="60008000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,14 +227,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="814" y="0" width="1106" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.32800752" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32747602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5030181" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5020121" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -298,7 +250,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.32800752" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32800752" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,8 +455,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HRLapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+        <state relative-caret-position="298">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

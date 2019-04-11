@@ -105,10 +105,10 @@ export default {
     let loginInfo = localStorage.getItem('hrl-login-info');
     if (loginInfo) {
       console.log("已登录");
-      let loginInfoObj = JSON.parse(loginInfo)
-      this.username = loginInfoObj.username
-      this.userRole = loginInfoObj.role
-      this.islogin = true
+      let loginInfoObj = JSON.parse(loginInfo);
+      this.username = loginInfoObj.username;
+      this.userRole = loginInfoObj.role;
+      this.islogin = true;
     }
   },
   methods:{
@@ -121,22 +121,22 @@ export default {
           password:this.loginForm.password
         }
       }).then((res)=>{
-        let data = res.data
+        let data = res.data;
         if (data.code == 1) {
-          this.islogin = true
-          this.userRole = data.role
-          this.username = data.username
+          this.islogin = true;
+          this.userRole = data.role;
+          this.username = data.username;
           this.loginDialogVisible = false
           // 使用localStorage管理登录态
-          let temp = {"role":this.userRole,"username":this.username}
-          localStorage.setItem('hrl-login-info',JSON.stringify(temp))
+          let temp = {"role":this.userRole,"username":this.username};
+          localStorage.setItem('hrl-login-info',JSON.stringify(temp));
         }else if (data.code == 0) {
-          alert(data.info)
+          alert(data.info);
           return ;
         }
       }).catch((err)=>{
-        console.log(err)
-        this.loginDialogVisible = false
+        console.log(err);
+        this.loginDialogVisible = false;
       })
     },
     signup(){
@@ -156,19 +156,19 @@ export default {
           password:this.signupForm.password
         }
       }).then((res)=>{
-        console.log(res.data)
-        this.signupDialogvisible = false
+        console.log(res.data);
+        this.signupDialogvisible = false;
       }).catch((err)=>{
-        console.log(err)
-        this.signupDialogvisible = false
+        console.log(err);
+        this.signupDialogvisible = false;
       })
     },
     quit(){
-      this.username = ''
-      this.islogin = false
-      this.userRole = 1
-      localStorage.removeItem('hrl-login-info')
-      this.$router.push({ path: '/' })
+      this.username = '';
+      this.islogin = false;
+      this.userRole = 1;
+      localStorage.removeItem('hrl-login-info');
+      this.$router.push({ path: '/' });
     }
   }
 };

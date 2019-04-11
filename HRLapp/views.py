@@ -29,8 +29,8 @@ def writeFile(fileData, path):
 # 生成路径信息文件并传入getCenter得到地图中心
 def centerMsg(req):
     roadFiles = req.FILES["roadfile"]
-    writeFile(roadFiles, 'static/road.csv')
-    resJson = getCenter('static/road.csv')
+    writeFile(roadFiles, 'files/road.csv')
+    resJson = getCenter('files/road.csv')
     return HttpResponse(json.dumps(resJson), content_type="application/json")
 
 
@@ -38,11 +38,9 @@ def centerMsg(req):
 def upload(req):
     roadFiles = req.FILES["roadfile"]
     timeFiles = req.FILES["timefile"]
-    writeFile(roadFiles, 'static/road.csv')
-    writeFile(timeFiles, 'static/time.csv')
-    resJson = getBP('static/time.csv', 'static/road.csv')
-    with open('static/res.json', 'w') as f:
-        f.write(resJson)
+    writeFile(roadFiles, 'files/road.csv')
+    writeFile(timeFiles, 'files/time.csv')
+    resJson = getBP('files/time.csv', 'files/road.csv')
     return HttpResponse(json.dumps(resJson), content_type="application/json")
 
 # 登录
