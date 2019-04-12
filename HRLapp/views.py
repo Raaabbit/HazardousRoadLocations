@@ -1,11 +1,10 @@
+import datetime
 import json
-import random
-import time
 
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from HRLapp.models import User
+from HRLapp.models import User, Messages
 from refs.utils.interface import getCenter
 from refs.utils.interface import getBP
 
@@ -76,4 +75,28 @@ def signup(req):
 
     return HttpResponse(json.dumps(response),content_type="application/json")
 
+# 用户提出反馈
+def report(req):
+    print("用户反馈")
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _username = reqJson['username']
+    _message = reqJson['message']
+    Messages.objects.create(user=_username,manager='',massage=_message,answer='',time='',status=0)
+    response = {'code': '1', 'info': '反馈成功，请耐心等待回复'}
+    return HttpResponse(json.dumps(response),content_type="application/json")
 
+# 用户查看被回复的消息
+def getanswer(req):
+    print("用户查看自己的反馈")
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _username = reqJson['username']
+    msgs = Messages.objects.filter(user=_username)
+    response = {'code':'1','messageList':[]}
+    for i in range(0, len(msgs)):
+        # temp = {'report':msgs[i].massage,'answer':msgs[i].answer,'time':msgs[i].time}
+        temp={}
+        temp['report'] = msgs[i].massage
+        temp['answer'] = msgs[i].answer
+        temp['time'] = msgs[i].time.strftime('%Y-%m-%d %H:%M:%S')
+        response['messageList'].append(temp)
+    return HttpResponse(json.dumps(response), content_type="application/json")

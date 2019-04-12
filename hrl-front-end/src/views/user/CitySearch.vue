@@ -79,25 +79,20 @@ export default {
             citySelected:"",
             countryList:["America"],
             cityList:["Alameda","Contra Costa","Fresno"],
-            mapData:[]
+            mapData:{
+                "Alameda":[{"bp_num": 1.0, "bp_lon": -122.1390599, "bp_lat": 37.68806989, "bp_r": 378.4},{"bp_num": 2.0, "bp_lon": -122.2759599, "bp_lat": 37.80864997, "bp_r": 309.0},{"bp_num": 3.0, "bp_lon": -122.2190689, "bp_lat": 37.77437882, "bp_r": 301.4},{"bp_num": 4.0, "bp_lon": -121.9732154, "bp_lat": 37.54055684, "bp_r": 263.2},{"bp_num": 5.0, "bp_lon": -122.0692214, "bp_lat": 37.60409978, "bp_r": 200.0}],
+                "Contra Costa":[{"bp_num": 1.0, "bp_lon": -122.0460109, "bp_lat": 37.9709652, "bp_r": 302.1},{"bp_num": 2.0, "bp_lon": -122.32918, "bp_lat": 37.96006996, "bp_r": 240.8},{"bp_num": 3.0, "bp_lon": -122.0674258, "bp_lat": 37.89729622, "bp_r": 210.2}],
+                "Fresno":[{"bp_num": 1.0, "bp_lon": -119.7814995, "bp_lat": 36.7515649, "bp_r": 277.9},{"bp_num": 2.0, "bp_lon": -119.80829, "bp_lat": 36.75038, "bp_r": 240.8}]
+            }
         }
     },
     methods:{
         search(){
-            // America
-            // Alameda
-            // [{"bp_num": 1.0, "bp_lon": -122.1390599, "bp_lat": 37.68806989, "bp_r": 378.4},{"bp_num": 2.0, "bp_lon": -122.2759599, "bp_lat": 37.80864997, "bp_r": 309.0},{"bp_num": 3.0, "bp_lon": -122.2190689, "bp_lat": 37.77437882, "bp_r": 301.4},{"bp_num": 4.0, "bp_lon": -121.9732154, "bp_lat": 37.54055684, "bp_r": 263.2},{"bp_num": 5.0, "bp_lon": -122.0692214, "bp_lat": 37.60409978, "bp_r": 200.0}]
-            // America
-            // Contra Costa
-            // [{"bp_num": 1.0, "bp_lon": -122.0460109, "bp_lat": 37.9709652, "bp_r": 302.1},{"bp_num": 2.0, "bp_lon": -122.32918, "bp_lat": 37.96006996, "bp_r": 240.8},{"bp_num": 3.0, "bp_lon": -122.0674258, "bp_lat": 37.89729622, "bp_r": 210.2}]
-            // America
-            // Fresno
-            // [{"bp_num": 1.0, "bp_lon": -119.7814995, "bp_lat": 36.7515649, "bp_r": 277.9},{"bp_num": 2.0, "bp_lon": -119.80829, "bp_lat": 36.75038, "bp_r": 240.8}]
             this.map = new BMap.Map("main-map");
-            console.log(this.map)
             let points = [];
-            for (let i in this.mapData) {
-                let point = new BMap.Point(this.mapData[i].bp_lon,this.mapData[i].bp_lat);
+            let pointData = this.mapData[this.citySelected]
+            for (let i in pointData) {
+                let point = new BMap.Point(pointData[i].bp_lon,pointData[i].bp_lat);
                 points.push(point);
             }
             this.map.centerAndZoom(points[0], 13);

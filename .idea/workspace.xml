@@ -4,14 +4,19 @@
     <list default="true" id="b359b6ea-4455-487e-825e-5e453e77b6c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HRLapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HRLapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-6550c032.d74827e8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.1a8998be.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.1a8998be.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-6550c032.278e56b9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-6550c032.278e56b9.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/user/FileAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/user/FileAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-2c22472a.3bb0666e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-ad4b04de.9d6068bd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.26253a20.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.26253a20.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-2c22472a.c8e4d21a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-2c22472a.c8e4d21a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-ad4b04de.21c9bbd9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-ad4b04de.21c9bbd9.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/user/CitySearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/user/CitySearch.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/user/Report.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/user/Report.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +51,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HRLapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+            <state relative-caret-position="269">
+              <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HazardousRoadLocations/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            <state relative-caret-position="240">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
                 <element signature="e#1#29#0" expanded="true" />
               </folding>
@@ -70,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HRLapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="220">
               <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
             </state>
           </provider>
@@ -128,6 +133,11 @@
             <path>
               <item name="HazardousRoadLocations" type="b2602c69:ProjectViewProjectNode" />
               <item name="HazardousRoadLocations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HazardousRoadLocations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HazardousRoadLocations" type="462c0819:PsiDirectoryNode" />
+              <item name="HRLapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -210,12 +220,12 @@
       <workItem from="1554870662752" duration="1526000" />
       <workItem from="1554903823309" duration="876000" />
       <workItem from="1554968579475" duration="7273000" />
-      <workItem from="1554989380026" duration="18447000" />
+      <workItem from="1554989380026" duration="23258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60008000" />
+    <option name="totallyTimeSpent" value="64819000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -235,7 +245,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5020121" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.555332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -438,8 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HazardousRoadLocations/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="240">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="e#1#29#0" expanded="true" />
           </folding>
@@ -448,17 +458,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HRLapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="220">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HRLapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        <state relative-caret-position="269">
+          <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

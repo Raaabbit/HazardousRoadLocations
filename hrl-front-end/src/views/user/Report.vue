@@ -6,23 +6,19 @@
         </div>
         <div class="m-func">
             <el-form>
-                <el-input
-                type="textarea"
-                :rows="5"
-                placeholder="请输入内容"
-                v-model="message">
+                <el-input type="textarea" :rows="5" placeholder="请输入内容" v-model="message">
                 </el-input>
                 <div class="btn-group">
                     <el-button type="primary" plain>清空</el-button>
-                    <el-button type="primary">提交</el-button>
+                    <el-button type="primary" @click="report">提交</el-button>
                 </div>
             </el-form>
             <!-- 收到的回复 -->
             <div class="answer-list">
                 <div v-for="item in answerList" :key="item.time">
                     <p class="msg">消息：{{item.report}}</p>
-                    <p class="res">官方回复：{{item.answer}}</p>
-                    <p class="res-time">回复时间：{{item.time}}</p>
+                    <p class="res-time">反馈时间：{{item.time?item.time:'一周内'}}</p>
+                    <p class="res">官方回复：{{item.answer?item.answer:'暂无'}}</p>
                 </div>
             </div>
         </div>
@@ -88,6 +84,46 @@ export default {
                     time:"2019-4-1 10:05"
                 }
             ]
+        }
+    },
+    created(){
+        this.setAnswer()
+    },
+    methods:{
+        report(){
+            if (!this.message) {
+                alert("请先输入评论")
+            }else{
+                this.$axios({
+                    method:"post",
+                    url:"/report/",
+                    data:{
+                        username:JSON.parse(localStorage.getItem('hrl-login-info')).username,
+                        message:this.message
+                    }
+                }).then((res)=>{
+                    let data = res.data;
+                    if (data.code == 1) {
+                        alert(data.info);
+                    }
+                    this.setAnswer()
+                }).catch((err)=>{
+                    console.log(err);
+                })
+            }
+        },
+        setAnswer(){
+            this.$axios({
+                    method:"post",
+                    url:"/getanswer/",
+                    data:{
+                        username:JSON.parse(localStorage.getItem('hrl-login-info')).username
+                    }
+                }).then((res)=>{
+                    this.answerList = res.data.messageList.reverse();
+                }).catch((err)=>{
+                    console.log(err);
+                })
         }
     }
 }
