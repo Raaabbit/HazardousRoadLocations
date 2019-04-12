@@ -8,11 +8,11 @@
         <div class="m-func">
             <div id="main-form">
                 <div>
-                    <label for="roadFile">选择道路信息文件</label>
+                    <label for="roadFile" @mouseover="openTips(1)">选择道路信息文件</label>
                     <span id="road-file-name">{{roadFile.name ? roadFile.name:"尚未上传文件"}}</span>
                 </div>
                 <div>
-                    <label for="timeFile">选择事故时间文件</label>
+                    <label for="timeFile" @mouseover="openTips(2)">选择事故时间文件</label>
                     <span id="time-file-name">{{timeFile.name ? timeFile.name:"尚未上传文件"}}</span>
                 </div>
                 <div>
@@ -107,6 +107,31 @@ export default {
         }
     },
     methods:{
+        openTips(type){
+            const h = this.$createElement;
+            if (type == 1) {
+                this.$message({
+                    message: h('div', null, [
+                        h('p', null, [
+                            h('span', null, '请上传格式如下的'),
+                            h('span', { style: 'color: #F56C6C' }, 'csv文件')
+                        ]),
+                        h('p', { style: 'color: teal' }, '道路编号-道路名称-道路起始点经度-道路起始点纬度-道路终止点经度-道路终止点纬度')
+                    ])
+                });
+            }else if (type == 2) {
+                this.$message({
+                    message: h('div', null, [
+                        h('p', null, [
+                            h('span', null, '请上传格式如下的'),
+                            h('span', { style: 'color: #F56C6C' }, 'csv文件')
+                        ]),
+                        h('p', { style: 'color: teal' }, '事故编号-事故发生时间-事故发生道路编号-死亡人数-重伤人数-轻伤人数-事故发生位置经度-事故发生位置纬度'),
+                        h('p', null, '其中不允许有空数据，发生时间的格式例如：2017/1/3')
+                    ])
+                });
+            }
+        },
         updateRoad(){
             this.roadFile = event.target.files[0];
             let formData = new FormData();
