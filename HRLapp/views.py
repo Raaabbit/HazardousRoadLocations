@@ -170,10 +170,10 @@ def addbps(req):
     _country = reqJson['country']
     _city = reqJson['city']
     _data = reqJson['data']
-    if len(BlackPoints.objects.filter(country=_country,city=_city) > 0):
-        BlackPoints.objects.filter(country=_country, city=_city).update(data=_data);
-    else:
+    if len(BlackPoints.objects.filter(country=_country,city=_city)) == 0:
         BlackPoints.objects.create(country=_country, city=_city, data=_data);
+    else:
+        BlackPoints.objects.filter(country=_country, city=_city).update(data=_data);
     response = {'code': '1', 'info': '添加成功'}
     return HttpResponse(json.dumps(response), content_type="application/json")
 
@@ -182,7 +182,7 @@ def countrylist(req):
     allCountry = BlackPoints.objects.all().values('country')
     response = {'code': '1', 'countryList': []}
     for i in range(0, len(allCountry)):
-        response['countryList'].append(allCountry[i].country)
+        response['countryList'].append(allCountry[i].get('country'))
     return HttpResponse(json.dumps(response), content_type="application/json")
 
 # 查找对应城市的数据
@@ -192,7 +192,7 @@ def citylist(req):
     citys = BlackPoints.objects.filter(country=_country)
     response = {'code': '1', 'cityList': []}
     for i in range(0, len(citys)):
-        response['countryList'].append(citys[i].city)
+        response['cityList'].append(citys[i].city)
     return HttpResponse(json.dumps(response), content_type="application/json")
 
 # 查找对应的黑点数据
@@ -201,5 +201,6 @@ def bplist(req):
     _country = reqJson['country']
     _city = reqJson['city']
     bps = BlackPoints.objects.get(country=_country,city=_city).data
+    print(bps)
     response = {'code': '1', 'info':bps}
     return HttpResponse(json.dumps(response), content_type="application/json")

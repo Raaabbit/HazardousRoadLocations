@@ -91,7 +91,7 @@ export default {
     },
     created(){
         this.reader = new FileReader()
-        this.reader.onload = function (event) {
+        this.reader.onload = (event)=>{
             this.bpFileString = event.target.result;
             console.log(this.bpFileString);
         };

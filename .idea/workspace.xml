@@ -4,18 +4,18 @@
     <list default="true" id="b359b6ea-4455-487e-825e-5e453e77b6c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HRLapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HRLapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-089ed3a4.4d4f953c.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-5ff821bf.fee63e63.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.300b6382.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.300b6382.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-089ed3a4.9af83ec0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-089ed3a4.9af83ec0.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-5ff821bf.6ccf5168.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-5ff821bf.6ccf5168.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-47a19399.176d7dc1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-b45d584c.a5b72c89.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.c1146baa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.c1146baa.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-47a19399.6d885943.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-47a19399.6d885943.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-b45d584c.22cec0ea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-b45d584c.22cec0ea.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/manager/AddBps.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/manager/AddBps.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/user/CitySearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/user/CitySearch.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +39,30 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="db" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="identifier.sqlite" type="feb32156:DbDataSourceImpl" />
+      </path>
     </expand>
     <select />
   </component>
@@ -47,25 +71,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HRLapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="202" column="67" selection-start-line="202" selection-start-column="67" selection-end-line="202" selection-end-column="67" />
+            <state relative-caret-position="410">
+              <caret line="205" column="46" lean-forward="true" selection-start-line="205" selection-start-column="46" selection-end-line="205" selection-end-column="46" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HazardousRoadLocations/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-              <folding>
-                <element signature="e#1#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,12 +120,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/HazardousRoadLocations/settings.py" />
         <option value="$PROJECT_DIR$/HRLapp/models.py" />
-        <option value="$PROJECT_DIR$/HRLapp/views.py" />
         <option value="$PROJECT_DIR$/HazardousRoadLocations/urls.py" />
+        <option value="$PROJECT_DIR$/HRLapp/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1056" />
     <option name="height" value="1055" />
@@ -145,8 +157,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
@@ -218,12 +232,12 @@
       <workItem from="1554870662752" duration="1526000" />
       <workItem from="1554903823309" duration="876000" />
       <workItem from="1554968579475" duration="7273000" />
-      <workItem from="1554989380026" duration="33628000" />
+      <workItem from="1554989380026" duration="36000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75189000" />
+    <option name="totallyTimeSpent" value="77561000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -235,15 +249,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1056" height="1055" extended-state="0" />
+    <frame x="0" y="0" width="958" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.38546255" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19868995" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32997987" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38648364" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36820924" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -252,13 +267,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32897383" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33534378" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3347413" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32800752" />
+      <window_info anchor="right" id="Database" order="4" weight="0.24866879" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,9 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9ea70258-23b4-4ff6-aa7e-2451ebf6a39a/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/HazardousRoadLocations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -451,6 +463,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HazardousRoadLocations/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="e#1#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9ea70258-23b4-4ff6-aa7e-2451ebf6a39a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ac4b0cc8-cf06-4ca5-9cae-f0f5ac3021b1/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://ac4b0cc8-cf06-4ca5-9cae-f0f5ac3021b1/collation/RTRIM">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://ac4b0cc8-cf06-4ca5-9cae-f0f5ac3021b1/collation/NOCASE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://ac4b0cc8-cf06-4ca5-9cae-f0f5ac3021b1/schema/main/table/sqlite_master">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d1de64-9af4-4591-b5f5-52991bf162a3/schema/main/table/auth_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d1de64-9af4-4591-b5f5-52991bf162a3/schema/main/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d1de64-9af4-4591-b5f5-52991bf162a3/schema/main/table/HRLapp_messages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d1de64-9af4-4591-b5f5-52991bf162a3/schema/main/table/HRLapp_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d1de64-9af4-4591-b5f5-52991bf162a3/schema/main/table/HRLapp_blackpoints">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d1de64-9af4-4591-b5f5-52991bf162a3/schema/main/table/sqlite_master">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://35d1de64-9af4-4591-b5f5-52991bf162a3/collation/RTRIM">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ac4b0cc8-cf06-4ca5-9cae-f0f5ac3021b1/collation/BINARY">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/HRLapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -460,20 +553,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HRLapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="202" column="67" selection-start-line="202" selection-start-column="67" selection-end-line="202" selection-end-column="67" />
+        <state relative-caret-position="410">
+          <caret line="205" column="46" lean-forward="true" selection-start-line="205" selection-start-column="46" selection-end-line="205" selection-end-column="46" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HazardousRoadLocations/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#1#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
