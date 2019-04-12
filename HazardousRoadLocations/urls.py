@@ -8,5 +8,10 @@ urlpatterns = [
     path('login/',views.login),
     path('signup/',views.signup),
     path('report/',views.report),
-    path('getanswer/',views.getanswer)
+    path('getanswer/',views.getanswer),
+    path('addmanager/',views.addmanager),
+    path('userupgrade/',views.userupgrade),
+    path('answer/',views.answer),
+    path('reportlist/',views.reportlist),
+    path('deletemsg/',views.deletemsg)
 ]

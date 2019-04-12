@@ -8,11 +8,11 @@
         </div>
         <div class="msg-list" v-else-if="msgList.length > 0">
             <div v-for="(item,index) in msgList" :key="index">
-                <p class="msg">来自用户{{item.username}}的消息：{{item.msg}}</p>
+                <p class="msg">来自用户{{item.username}}的消息：{{item.report}}</p>
                 <div class="answer-editer">    
-                    <el-input class="answer-input" placeholder="请输入回复"></el-input>
-                    <el-button type="primary" plain>回复</el-button>
-                    <el-button type="danger" plain>删除</el-button> 
+                    <el-input class="answer-input" placeholder="请输入回复" v-model="item.answer"></el-input>
+                    <el-button type="primary" plain @click="dealReport(index)">回复</el-button>
+                    <el-button type="danger" plain @click="deleteReport(index)">删除</el-button> 
                 </div>
             </div>
         </div>
@@ -58,23 +58,71 @@
 export default {
     data(){
         return {
-            msgList:[
-                {
-                    username:"测试人员1",
-                    msg:"请问BSI系统是如何绘制地图的？地图精确吗？"
-                },
-                {
-                    username:"测试人员2",
-                    msg:"请问BSI系统绘制的地图精确吗？可以用来导航吗"
-                }
-            ]
+            managerName:JSON.parse(localStorage.getItem('hrl-login-info')).username,
+            msgList:[]
         }
     },
     methods:{
-
+        setMsgList(){
+            this.$axios({
+                method:"post",
+                url:"/reportlist/",
+                data:{
+                    username:this.managerName
+                }
+            }).then((res)=>{
+                let data = res.data;
+                if (data.code == 1) {
+                    this.msgList = data.messageList;
+                }
+            }).catch((err)=>{
+                console.log(err);
+            })
+        },
+        dealReport(index){
+            this.$axios({
+                method:"post",
+                url:"/answer/",
+                data:{
+                    user:this.msgList[index].user,
+                    report:this.msgList[index].report,
+                    manager:this.managerName,
+                    answer:this.msgList[index].answer
+                }
+            }).then((res)=>{
+                let data = res.data;
+                if (data.code == 1) {
+                    alert(data.info)
+                }
+                this.setMsgList()
+            }).catch((err)=>{
+                console.log(err);
+            })
+            
+        },
+        deleteReport(index){
+            this.$axios({
+                method:"post",
+                url:"/deletemsg/",
+                data:{
+                    user:this.msgList[index].user,
+                    report:this.msgList[index].report
+                }
+            }).then((res)=>{
+                let data = res.data;
+                if (data.code == 1) {
+                    alert(data.info)
+                }
+                this.setMsgList()
+            }).catch((err)=>{
+                console.log(err);
+            })
+            
+        }
     },
     created(){
         // 发请求，判断是否有要回复的消息
+        this.setMsgList()
     }
 }
 </script>

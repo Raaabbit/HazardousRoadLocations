@@ -100,3 +100,66 @@ def getanswer(req):
         temp['time'] = msgs[i].time.strftime('%Y-%m-%d %H:%M:%S')
         response['messageList'].append(temp)
     return HttpResponse(json.dumps(response), content_type="application/json")
+
+# 普通用户升级为管理员
+def userupgrade(req):
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _username = reqJson['username']
+    user = User.objects.filter(username=_username)
+    if len(user) == 0:
+        response = {'code': '0', 'info': '用户名不存在，请检查用户名或者尝试直接添加管理员'}
+    else:
+        User.objects.filter(username=_username).update(role=2)
+        response = {'code': '1', 'info': '成功升级为管理员'}
+
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+# 直接添加管理员
+def addmanager(req):
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _username = reqJson['username']
+    _password = reqJson['password']
+    user = User.objects.filter(username=_username)
+    if len(user) >= 1:
+        response = {'code': '0', 'info': '用户名已存在'}
+    else:
+        User.objects.create(username=_username, password=_password, role=2)
+        response = {'code': '1', 'info': '新管理员添加成功'}
+
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+# 回复消息
+def answer(req):
+    print("管理员回复")
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _user = reqJson['user']
+    _report = reqJson['report']
+    _manager = reqJson['manager']
+    _answer = reqJson['answer']
+    Messages.objects.filter(user=_user, massage=_report).update(answer=_answer,status=1,manager=_manager)
+    response = {'code': '1', 'info': '回复成功'}
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+# 删除消息
+def deletemsg(req):
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _user = reqJson['user']
+    _report = reqJson['report']
+    Messages.objects.filter(user=_user, massage=_report).delete()
+    response = {'code': '1', 'info': '删除成功'}
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+# 管理员查看待回复消息
+def reportlist(req):
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _username = reqJson['username']
+    msgs = Messages.objects.filter(status=0)
+    response = {'code': '1', 'messageList': []}
+    for i in range(0, len(msgs)):
+        temp = {}
+        temp['user'] = msgs[i].user
+        temp['report'] = msgs[i].massage
+        temp['answer'] = msgs[i].answer
+        response['messageList'].append(temp)
+
+    return HttpResponse(json.dumps(response), content_type="application/json")

@@ -13,7 +13,7 @@
                     </el-form>
                     <div class="btn-group">
                         <el-button >取 消</el-button>
-                        <el-button type="primary">添 加</el-button>
+                        <el-button type="primary" @click="userUpgrade">添 加</el-button>
                     </div>
                 </el-tab-pane>
                 <el-tab-pane label="添加新管理员">
@@ -22,15 +22,15 @@
                             <el-input v-model="addManagerForm.username" autocomplete="off"></el-input>
                         </el-form-item>
                         <el-form-item label="输入密码">
-                            <el-input v-model="addManagerForm.password" autocomplete="off"></el-input>
+                            <el-input show-password v-model="addManagerForm.password" autocomplete="off"></el-input>
                         </el-form-item>
                         <el-form-item label="确认密码">
-                            <el-input v-model="addManagerForm.passwordConfirm" autocomplete="off"></el-input>
+                            <el-input show-password v-model="addManagerForm.passwordConfirm" autocomplete="off"></el-input>
                         </el-form-item>
                     </el-form>
                     <div class="btn-group">
                         <el-button >取 消</el-button>
-                        <el-button type="primary">添 加</el-button>
+                        <el-button type="primary" @click="addManager">添 加</el-button>
                     </div>
                 </el-tab-pane>
             </el-tabs>
@@ -73,7 +73,39 @@ export default {
         }
     },
     methods:{
-
+        userUpgrade(){
+            this.$axios({
+                method:"post",
+                url:"/userupgrade/",
+                data:{
+                    username:this.upgradeForm.username
+                }
+            }).then((res)=>{
+                let data = res.data;
+                alert(data.info);
+            }).catch((err)=>{
+                console.log(err);
+            })
+        },
+        addManager(){
+            if (this.addManagerForm.password != this.addManagerForm.passwordConfirm) {
+                alert("请确认两次输入密码是否一致")
+                return ;
+            }
+            this.$axios({
+                method:"post",
+                url:"/addmanager/",
+                data:{
+                    username:this.addManagerForm.username,
+                    password:this.addManagerForm.password
+                }
+            }).then((res)=>{
+                let data = res.data;
+                alert(data.info);
+            }).catch((err)=>{
+                console.log(err);
+            })
+        }
     }
 }
 </script>

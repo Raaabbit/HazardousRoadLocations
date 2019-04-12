@@ -25,9 +25,7 @@
             </el-form>
             <!-- 占位图片或地图 -->
             <div class="m-func-map">
-                <div class="img-tip" v-if="mapData.length == 0">
-                </div>
-                <div id="main-map" v-else-if="mapData.length > 0">
+                <div id="main-map">
 
                 </div>
             </div>
@@ -61,12 +59,9 @@
         .m-func-map
             width 630px
             height 500px
-            // background #E4E7ED
-            .img-tip
-                height 100%
-                background-image url("../../assets/tips.gif")
             #main-map
                 height 100%
+                background-image url("../../assets/tips.gif")
 </style>
 
 <script>
@@ -95,14 +90,14 @@ export default {
                 let point = new BMap.Point(pointData[i].bp_lon,pointData[i].bp_lat);
                 points.push(point);
             }
-            this.map.centerAndZoom(points[0], 13);
+            this.map.centerAndZoom(points[0], 12);
             for (let j in points) {
                 let marker = new BMap.Marker(points[j]);
                 this.map.addOverlay(marker);
             }
         },
         exportRes(){
-            let expData = new Blob([JSON.stringify(this.mapData)],{type:'application/json'});
+            let expData = new Blob([JSON.stringify(this.mapData[this.citySelected])],{type:'application/json'});
             let aTag = document.createElement('a');
             aTag.download = 'res.json';
             aTag.href = URL.createObjectURL(expData);
