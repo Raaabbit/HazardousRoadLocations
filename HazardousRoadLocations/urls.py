@@ -13,5 +13,9 @@ urlpatterns = [
     path('userupgrade/',views.userupgrade),
     path('answer/',views.answer),
     path('reportlist/',views.reportlist),
-    path('deletemsg/',views.deletemsg)
+    path('deletemsg/',views.deletemsg),
+    path('addbps/',views.addbps),
+    path('countrylist/',views.countrylist),
+    path('citylist/',views.citylist),
+    path('bplist/',views.bplist)
 ]

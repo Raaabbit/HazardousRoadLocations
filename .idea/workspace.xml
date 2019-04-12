@@ -7,20 +7,15 @@
       <change beforePath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HazardousRoadLocations/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-0afcab6c.a065681b.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-59f3e08a.ec5511e6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-e6c562bc.5a4f5734.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.8bae59c6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.8bae59c6.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-0afcab6c.43ba32a7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-0afcab6c.43ba32a7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-59f3e08a.a138b665.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-59f3e08a.a138b665.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-e6c562bc.f1a0242b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-e6c562bc.f1a0242b.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/manager/AddManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/manager/AddManager.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/manager/Dealreport.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/manager/Dealreport.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/user/CitySearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/user/CitySearch.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-089ed3a4.4d4f953c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/css/chunk-5ff821bf.fee63e63.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.300b6382.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/app.300b6382.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-089ed3a4.9af83ec0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-089ed3a4.9af83ec0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-5ff821bf.6ccf5168.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/dist/static/js/chunk-5ff821bf.6ccf5168.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrl-front-end/src/views/manager/AddBps.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hrl-front-end/src/views/manager/AddBps.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HRLapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="138" column="47" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
+            <state relative-caret-position="598">
+              <caret line="202" column="67" selection-start-line="202" selection-start-column="67" selection-end-line="202" selection-end-column="67" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -64,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HazardousRoadLocations/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="425">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
               <folding>
                 <element signature="e#1#29#0" expanded="true" />
               </folding>
@@ -79,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HRLapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="264">
+              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -113,16 +108,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/HazardousRoadLocations/settings.py" />
         <option value="$PROJECT_DIR$/HRLapp/models.py" />
-        <option value="$PROJECT_DIR$/HazardousRoadLocations/urls.py" />
         <option value="$PROJECT_DIR$/HRLapp/views.py" />
+        <option value="$PROJECT_DIR$/HazardousRoadLocations/urls.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="864" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1056" />
-    <option name="height" value="937" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -224,12 +218,12 @@
       <workItem from="1554870662752" duration="1526000" />
       <workItem from="1554903823309" duration="876000" />
       <workItem from="1554968579475" duration="7273000" />
-      <workItem from="1554989380026" duration="28951000" />
+      <workItem from="1554989380026" duration="33628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70512000" />
+    <option name="totallyTimeSpent" value="75189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -241,7 +235,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="970" y="0" width="950" height="1080" extended-state="0" />
+    <frame x="0" y="23" width="1056" height="1055" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.38546255" />
@@ -249,7 +243,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4416499" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38648364" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -258,7 +252,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32897383" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27967808" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33534378" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -450,16 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HazardousRoadLocations/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#1#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/dateparse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -469,17 +453,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HRLapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="264">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HRLapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="138" column="47" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
+        <state relative-caret-position="598">
+          <caret line="202" column="67" selection-start-line="202" selection-start-column="67" selection-end-line="202" selection-end-column="67" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HazardousRoadLocations/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="e#1#29#0" expanded="true" />
           </folding>
         </state>
       </provider>

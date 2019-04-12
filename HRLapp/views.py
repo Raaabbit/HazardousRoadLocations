@@ -4,7 +4,7 @@ import json
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from HRLapp.models import User, Messages
+from HRLapp.models import User, Messages, BlackPoints
 from refs.utils.interface import getCenter
 from refs.utils.interface import getBP
 
@@ -162,4 +162,44 @@ def reportlist(req):
         temp['answer'] = msgs[i].answer
         response['messageList'].append(temp)
 
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+# 管理员添加黑点
+def addbps(req):
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _country = reqJson['country']
+    _city = reqJson['city']
+    _data = reqJson['data']
+    if len(BlackPoints.objects.filter(country=_country,city=_city) > 0):
+        BlackPoints.objects.filter(country=_country, city=_city).update(data=_data);
+    else:
+        BlackPoints.objects.create(country=_country, city=_city, data=_data);
+    response = {'code': '1', 'info': '添加成功'}
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+# 查找已有的国家列表
+def countrylist(req):
+    allCountry = BlackPoints.objects.all().values('country')
+    response = {'code': '1', 'countryList': []}
+    for i in range(0, len(allCountry)):
+        response['countryList'].append(allCountry[i].country)
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+# 查找对应城市的数据
+def citylist(req):
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _country = reqJson['country']
+    citys = BlackPoints.objects.filter(country=_country)
+    response = {'code': '1', 'cityList': []}
+    for i in range(0, len(citys)):
+        response['countryList'].append(citys[i].city)
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+# 查找对应的黑点数据
+def bplist(req):
+    reqJson = json.loads(req.body.decode('utf-8'))
+    _country = reqJson['country']
+    _city = reqJson['city']
+    bps = BlackPoints.objects.get(country=_country,city=_city).data
+    response = {'code': '1', 'info':bps}
     return HttpResponse(json.dumps(response), content_type="application/json")

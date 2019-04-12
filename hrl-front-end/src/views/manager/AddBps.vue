@@ -7,19 +7,19 @@
             <el-card>
                 <el-form class="m-form">
                 <el-form-item label="国家名称">
-                    <el-input v-model="countryName"></el-input>
+                    <el-input v-model="country"></el-input>
                 </el-form-item>
                 <el-form-item label="城市名称">
-                    <el-input v-model="cityName"></el-input>
+                    <el-input v-model="city"></el-input>
                 </el-form-item>
                 <div>
                     <label for="bpFile">选择路网黑点文件</label>
-                    <input type="file" name="bpFile" id="bpFile" accept=".json">
-                    <span id="bpFileName">尚未上传文件</span>
+                    <input type="file" name="bpFile" id="bpFile" accept=".json" @change="updateBpFile">
+                    <span id="bpFileName">{{bpFile?bpFile.name:"尚未上传文件"}}</span>
                 </div>
                 <div class="btn-group">
-                    <el-button >取 消</el-button>
-                    <el-button type="primary">添 加</el-button>
+                    <el-button @click="reset">取 消</el-button>
+                    <el-button type="primary" @click="submit">添 加</el-button>
                 </div>
             </el-form>
             </el-card>
@@ -82,16 +82,47 @@
 export default {
     data(){
         return {
-            countryName:"",
-            cityName:"",
-            fileList:[]
+            country:"",
+            city:"",
+            bpFile:"",
+            bpFileString:"",
+            reader:""
         }
     },
-    methods:{
-
-    },
     created(){
-        // 发请求，判断是否有要回复的消息
+        this.reader = new FileReader()
+        this.reader.onload = function (event) {
+            this.bpFileString = event.target.result;
+            console.log(this.bpFileString);
+        };
+    },
+    methods:{
+        updateBpFile(){
+            this.bpFile = event.target.files[0];
+            this.reader.readAsText(this.bpFile);
+        },
+        submit(){
+            this.$axios({
+                method:"post",
+                url:"/addbps/",
+                data:{
+                    country:this.country,
+                    city:this.city,
+                    data:this.bpFileString
+                }
+            }).then((res)=>{
+                alert(res.data.info);
+                this.reset();
+            }).catch((err)=>{
+                console.log(err);
+            })
+        },
+        reset(){
+            this.bpFile = "";
+            this.city = "";
+            this.country = "";
+            this.bpFileString = ""
+        }
     }
 }
 </script>
