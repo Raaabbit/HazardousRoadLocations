@@ -113,22 +113,9 @@ export default {
             }).catch((err)=>{
                 console.log(err);
             })
-
-            // this.map = new BMap.Map("main-map");
-            // let points = [];
-            // let pointData = this.mapData[this.citySelected]
-            // for (let i in pointData) {
-            //     let point = new BMap.Point(pointData[i].bp_lon,pointData[i].bp_lat);
-            //     points.push(point);
-            // }
-            // this.map.centerAndZoom(points[0], 12);
-            // for (let j in points) {
-            //     let marker = new BMap.Marker(points[j]);
-            //     this.map.addOverlay(marker);
-            // }
         },
         exportRes(){
-            let expData = new Blob([JSON.stringify(this.mapData[this.citySelected])],{type:'application/json'});
+            let expData = new Blob([JSON.stringify(this.mapData)],{type:'application/json'});
             let aTag = document.createElement('a');
             aTag.download = 'res.json';
             aTag.href = URL.createObjectURL(expData);

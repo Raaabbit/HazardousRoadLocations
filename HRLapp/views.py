@@ -181,8 +181,10 @@ def addbps(req):
 def countrylist(req):
     allCountry = BlackPoints.objects.all().values('country')
     response = {'code': '1', 'countryList': []}
+    temp = []
     for i in range(0, len(allCountry)):
-        response['countryList'].append(allCountry[i].get('country'))
+        temp.append(allCountry[i].get('country'))
+    response['countryList'] = {}.fromkeys(temp).keys()
     return HttpResponse(json.dumps(response), content_type="application/json")
 
 # 查找对应城市的数据

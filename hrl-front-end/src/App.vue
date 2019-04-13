@@ -109,6 +109,8 @@ export default {
       this.username = loginInfoObj.username;
       this.userRole = loginInfoObj.role;
       this.islogin = true;
+    }else{
+      this.$router.push({ path: '/' });
     }
   },
   methods:{
