@@ -184,7 +184,9 @@ def countrylist(req):
     temp = []
     for i in range(0, len(allCountry)):
         temp.append(allCountry[i].get('country'))
-    response['countryList'] = {}.fromkeys(temp).keys()
+    response['countryList'] = list(set(temp))
+    print(temp)
+    print(response['countryList'])
     return HttpResponse(json.dumps(response), content_type="application/json")
 
 # 查找对应城市的数据
